@@ -9,5 +9,6 @@ app.use(express.static("public"))
 connect()
 app.use("/user", require("./routes/userRoutes"))
 
+
 const PORT = process.env.PORT || 5000
 app.listen(PORT, console.log(`http://localhost:5000`))
